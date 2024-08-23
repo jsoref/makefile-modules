@@ -18,7 +18,7 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-# This script updates all found occurances of the base images listed below
+# This script updates all found occurrences of the base images listed below
 # it automatically fetches the latest digest for these images.
 
 base_images=(

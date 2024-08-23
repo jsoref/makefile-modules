@@ -22,7 +22,7 @@ olm_base_dir := $(current_makefile_directory)/base
 
 ifdef deploy_name
 # Name of the project, this goes in the PROJECT file as well as getting used.
-# $(deploy_name) is usally a sane default for this value
+# $(deploy_name) is usually a sane default for this value
 olm_project_name ?= $(deploy_name)
 endif
 
@@ -56,7 +56,7 @@ olm_replaces_version ?= $(shell git describe --tags --always --match='v*' --abbr
 oci_olm_image_tag ?= $(VERSION)
 
 # When publishing a certified operator you must submit a preflight scan, this
-# variable maps images to the IDs to use when submiting preflight scan results
+# variable maps images to the IDs to use when submitting preflight scan results
 # For example:
 #   preflight_container_project_ids += registry.venafi.cloud/public/venafi-images/vcp-operator=123456abcdef123456abcde
 #
